@@ -149,7 +149,9 @@ function reset() {
     `;
   playerTurn = 1;
   turnsPlayed = 0;
-
+  document.getElementById('footer').style = `
+    display: none;
+  `;
 }
 function readColors() {
   document.getElementById("player_color_1").value;
