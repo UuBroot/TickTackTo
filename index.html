@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic!Tac!Toe!</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="body">
+    <header>
+      <h1>TicTacToe</h1>
+    </header>
+    <div id="endScreen"></div>
+    <!--Audio-->
+    <audio id="audio"> </audio>
+    <audio id="music"></audio>
+    <audio id="win"></audio>
+
+    <main id="main">
+      <!--Row1-->
+      <div class="blocks" onclick="readGrid(this, 0, 0)"></div>
+      <div class="blocks" onclick="readGrid(this, 0, 1)"></div>
+      <div class="blocks" onclick="readGrid(this, 0, 2)"></div>
+      <!--Row2-->
+      <div class="blocks" onclick="readGrid(this, 1, 0)"></div>
+      <div class="blocks" onclick="readGrid(this, 1, 1)"></div>
+      <div class="blocks" onclick="readGrid(this, 1, 2)"></div>
+      <!--Row3-->
+      <div class="blocks" onclick="readGrid(this, 2, 0)"></div>
+      <div class="blocks" onclick="readGrid(this, 2, 1)"></div>
+      <div class="blocks" onclick="readGrid(this, 2, 2)"></div>
+    </main>
+    <footer id="footer">
+      <div style="border: none">
+        <h4>Player1</h4>
+        <input
+          type="color"
+          id="player_color_1"
+          id="colorPicker"
+          value="#B9B9B9"
+        />
+        <p id="p1Score">Score=0</p>
+      </div>
+      <div style="border: none">
+        <h4>Player2</h4>
+        <input
+          type="color"
+          id="player_color_2"
+          id="colorPicker"
+          value="#F01054"
+        />
+        <p id="p2Score">Score=0</p>
+      </div>
+    </footer>
+  </body>
+</html>
